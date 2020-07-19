@@ -8,8 +8,8 @@ function App() {
   return (
 
     < div >
-      <SchoolCricket></SchoolCricket>
-      {/* <Graph /> */}
+      {/* <SchoolCricket></SchoolCricket> */}
+      <Graph />
     </div >
   );
 }
