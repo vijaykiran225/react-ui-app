@@ -1,0 +1,10 @@
+.ems{
+    font-size: 40pt;
+    transition-duration: 1s;
+    margin-left: 15pt;
+
+}
+.ems:hover{
+    font-size: 65pt;
+    /* transform: scale(2); */
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Graph from './components/graph/graph';
+import SchoolCricket from './components/schoolcricket/cric';
 
 function App() {
 
@@ -7,8 +8,8 @@ function App() {
   return (
 
     < div >
-
-      <Graph />
+      <SchoolCricket></SchoolCricket>
+      {/* <Graph /> */}
     </div >
   );
 }
