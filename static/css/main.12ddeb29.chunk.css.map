@@ -1,0 +1,1 @@
+{"version":3,"sources":["cricket.css"],"names":[],"mappings":"AAAA,KACI,cAAe,CACf,uBAAyB,CACzB,gBAAiB,CACjB,UACJ,CACA,WACI,SAEJ","file":"main.12ddeb29.chunk.css","sourcesContent":[".ems{\n    font-size: 40pt;\n    transition-duration: 0.1s;\n    margin-left: 15pt;\n    opacity: 0.5;\n}\n.ems:hover{\n    opacity: 1;\n    /* transform: scale(2); */\n}"]}
