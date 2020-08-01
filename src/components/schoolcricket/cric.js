@@ -22,7 +22,7 @@ class SchoolCricket extends Component {
 
     handleChange(e) {
 
-        let c = Math.floor(Math.random() * 6);
+        let c = Math.floor(Math.random() * 8);
         let currentScore = this.state.playerScore.runs;
         let currWickets = this.state.playerScore.wicket;
         if (c === parseInt(e.target.id)) {
@@ -57,17 +57,20 @@ class SchoolCricket extends Component {
                 );
             }
         }
-        return collection;
+        return <div className="ems">{collection}</div>;
     }
 
     render() {
         let hands = this.getHands(cricketData);
 
+
+
         return (
             <div>
-                <div class="ems">
-                    {hands}
-                </div>
+
+                {this.state.playerScore.wicket < 10 ? hands : "Game over"}
+
+
                 <ScoreBar
                     name={this.state.name}
                     playerSelection={this.state.playerSel}
