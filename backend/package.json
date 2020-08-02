@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "startJenkins": "node server.js",
-    "startPRS": "node server2.js"
+    "startS2": "node server2.js"
   },
   "keywords": [],
   "author": "vijaykiran225",
