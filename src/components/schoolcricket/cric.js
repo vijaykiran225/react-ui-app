@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ScoreBar from './nameAndScore';
 import ScoreHistory from './scoreHistory';
 import cricketData from '../../config/cricketData';
-import cricketCSS from '../../styles/cricket.css';
+import '../../styles/cricket.css';
 
 class SchoolCricket extends Component {
 

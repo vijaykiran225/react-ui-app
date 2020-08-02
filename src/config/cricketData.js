@@ -28,12 +28,6 @@ const dot = {
     display: "✊"
 };
 
-//beta
-const ten = {
-    score: 10,
-    display: "👎"
-};
-
 export default {
     single,
     two,
