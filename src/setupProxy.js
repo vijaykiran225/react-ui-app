@@ -3,11 +3,19 @@ module.exports = function (app) {
     app.use(
         '/jenkins',
         createProxyMiddleware({
-            target: 'http://localhost:3010',
+            target: 'http://localhost:8443',
             changeOrigin: true,
             pathRewrite: {
                 "^/jenkins": "/s1"
-            }
+            },
+            router: function classify(req) {
+                return {
+                    protocol: 'http:', // The : is required
+                    host: req.headers['x-hostname'],
+                    port: req.headers['x-portname']
+                };
+            },
+            secure: false
         })
     );
     app.use(
@@ -15,6 +23,7 @@ module.exports = function (app) {
         createProxyMiddleware({
             target: 'http://localhost:3060',
             changeOrigin: true,
+            secure: false
         })
     );
     app.use(
@@ -24,7 +33,8 @@ module.exports = function (app) {
             changeOrigin: true,
             pathRewrite: {
                 "^/postData": "/s1Post"
-            }
+            },
+            secure: false
         })
     );
 };
